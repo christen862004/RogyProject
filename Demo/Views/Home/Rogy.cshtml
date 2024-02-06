@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Hello World</h1>
+<style>
+h1{color:red}
+</style>
+<hr />
+<!--Server side-->
+<!--Razor Synatx-->
+<!--Block o code-->
+@{
+    int x=10 ;
+    int y=x+10;
+    
+}
+<!--Inline Statme-->
+@(x+10)
+<!--Condition Statmenent-->
+@if (x < y)
+{
+    <h2> x= @x less Than y = @y</h2>
+}
+else{
+    <h2> x=@x greater Than y=@y</h2>
+}
+<!--Looping -->
+@for(int i = 0; i < 10; i++)
+{
+    <li>@i</li>
+}
